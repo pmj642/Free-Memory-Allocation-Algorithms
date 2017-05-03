@@ -121,20 +121,19 @@ void call_algo(int freeblocks[], int n_blocks, int process[], int n_process)
 					break;
 		}
 		timer = (double(clock() - timer))/CLOCKS_PER_SEC;
-		cout << "| " << setw(15) << left << no_of_unalloc << setw(9) << right << timer;
+		cout << "| " << setw(15) << left << no_of_unalloc << setw(11) << right << timer;
 	}
 	cout << endl;
 }
 
 int main()
 {
-	char i,filename[7];
+	char i,filename[12];
 	
 	char block_data_type[15];		//sorted,reverse sorted or random
 	int no_of_freeblocks,j;
 	
-	strcpy(filename,"input");
-	filename[6]='\0';
+	strcpy(filename,"inputi.txt");
 	
 	int no_of_process;
 	//read the process data for once and all
@@ -150,13 +149,13 @@ int main()
 	fclose(stdin);
 	//formatted output
 	cout << left << setw(12) << " " << "| " << setw(18) << " ";
-	cout << "| " << setw(24) << "First Fit";
-	cout << "| " << setw(24) << "Best Fit"<< "| " << setw(24) << "Worst Fit" << endl;
+	cout << "| " << setw(26) << "First Fit";
+	cout << "| " << setw(26) << "Best Fit"<< "| " << setw(26) << "Worst Fit" << endl;
 	cout << left << setw(12) << "Dataset #" << "| " << setw(18) << "Dataset Descrp.";
 	for(i=0; i<3; ++i)
-		cout << "| " << left <<  setw(15) << "#unalloc. proc" << right << setw(9) << "time";
+		cout << "| " << left <<  setw(15) << "#unalloc. proc" << right << setw(11) << "time(sec)";
 	cout << endl;
-	for(i=0; i<111; ++i)
+	for(i=0; i<117; ++i)
 		cout << '-';
 	cout << endl;
 	
@@ -168,8 +167,8 @@ int main()
 		
 		freopen(filename,"r",stdin);
 			
-		cin>>no_of_freeblocks;
 		cin.getline(block_data_type,15);
+		cin>>no_of_freeblocks;
 
 		cout << setw(12) << left << i << "| " << setw(18) << block_data_type;
 
