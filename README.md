@@ -1,4 +1,4 @@
-# A C++ program to calculate and time complexity of First, Best and Worst Fit algorithms
+# A C++ program to calculate and study time complexity of First, Best and Worst Fit algorithms
 
 ## Libraries Included
 1)	iostream(standard i/o)
