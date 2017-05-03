@@ -1,4 +1,32 @@
-# A C++ program to calculate time complexity of First, Best and Worst Fit algorithms
+# A C++ program to calculate and time complexity of First, Best and Worst Fit algorithms
+
+## Libraries Included
+1)	iostream(standard i/o)
+2)	ctime	(timer)
+3)	cstring	(strcpy() function)
+4)	iomanip (formatted output)
+
+## Functions Used
+
+* int main(void);
+	
+	driver function
+
+* void *__call_algo__*(int freeblocks[], int n_blocks, int process[], int n_process);
+	
+	Function to call three memory allocation functions
+
+* int *__firstFit__*(int blockSize[], int m, int processSize[], int n);
+
+	Function to allocate memory to blocks as per First fit algorithm
+
+* int *__bestFit__*(int blockSize[], int m, int processSize[], int n);
+	
+	Function to allocate memory to blocks as per Best fit algorithm
+
+* int *__worstFit__*(int blockSize[], int m, int processSize[], int n);
+
+	Function to allocate memory to blocks as per Worst fit algorithm
 
 ## The main() function
 
