@@ -1,0 +1,11 @@
+            |                   | First Fit                 | Best Fit                  | Worst Fit
+Dataset #   | Dataset Descrp.   | #unalloc. proc   time(sec)| #unalloc. proc   time(sec)| #unalloc. proc   time(sec)
+---------------------------------------------------------------------------------------------------------------------
+0           | sorted            | 28131                   14| 28215                   29| 37763                   35
+1           | reverse sorted    | 28726                   10| 28215                   35| 37763                   27
+2           | random            | 27170                   13| 28215                   37| 37763                   41
+3           | random-1          | 27265                   14| 28259                   36| 37835                   40
+4           | random-2          | 27414                   14| 28497                   37| 37833                   38
+
+--------------------------------
+Process exited after 429 seconds with return value 0
